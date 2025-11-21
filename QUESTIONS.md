@@ -60,3 +60,41 @@ Goal of this question:
 Practice passing **multiple props** into a component and reusing the same component for **different data**.
 
 ---
+
+### Q3. Product List with Props and Array Mapping
+
+Create a React app with name **"product-list-app"**.
+
+1. In `App.jsx`, create an array named `products` that contains multiple product objects.  
+   Each product object should have:
+   - `id` (for example: `"A01"`)
+   - `name` (for example: `"Laptop"`)
+   - `price` (for example: `60000`)
+
+   Example structure:
+   ```js
+   const products = [
+     { id: "A01", name: "Laptop", price: 60000 },
+     { id: "A02", name: "Smartphone", price: 20000 },
+     { id: "A03", name: "Headphones", price: 3000 }
+   ];
+2. Create a component ProductItem inside a Components folder.
+3. The ProductItem component should:
+
+    - Receive id, name, and price as props.
+
+    - Display them like:
+        - Name:
+        - ID:
+        - Price: (you can prefix with ₹)
+
+    - Add a <hr /> after each product to visually separate the items.
+
+4. In App.jsx:
+    - Show a heading: Product Information
+
+    - Use the map() method on the products array to render one ProductItem for each product.
+
+    - Pass id, name, and price as props to ProductItem.
+
+    - Use the product’s id as the key prop in the map.
