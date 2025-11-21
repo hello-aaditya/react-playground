@@ -1,6 +1,6 @@
 # 01. Props
 
-## Q1. Multiple Greetings with Props (Single Component, Multiple Names)
+### Q1. Multiple Greetings with Props (Single Component, Multiple Names)
 
 Create a React app with name **"greeting-app"**.
 
@@ -23,3 +23,40 @@ Create a React app with name **"greeting-app"**.
 
 Goal of this question:  
 Practice **passing multiple props** from parent to child and using them inside a component to display dynamic text.
+
+---
+
+### Q2. User Card Component (Two Users, Props-Based)
+
+Create a React app with name **"user-card-app"**.
+
+1. Inside a `Components` folder, create a component file **`UserCard.jsx`**.
+
+2. The `UserCard` component should:
+   - Receive the following props:
+     - `name` (string)
+     - `age` (number)
+     - `city` (string)
+   - Display the details like this:
+     - `Name: {name}`
+     - `Age: {age}`
+     - `City: {city}`
+   - Add a horizontal line `<hr />` after each card to separate multiple users.
+
+3. In **`App.jsx`**:
+   - Create two sets of variables:
+
+     Example:
+     - `name1`, `age1`, `city1` → for first user  
+     - `name2`, `age2`, `city2` → for second user  
+
+   - Render a heading:  
+     `User Details:`
+   - Render the `UserCard` component **two times**, and pass different props each time:
+     - First `UserCard` uses `name1`, `age1`, `city1`
+     - Second `UserCard` uses `name2`, `age2`, `city2`
+
+Goal of this question:  
+Practice passing **multiple props** into a component and reusing the same component for **different data**.
+
+---
