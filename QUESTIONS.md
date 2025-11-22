@@ -134,3 +134,32 @@ Goal of this question:
 Practice **passing props to control both content and styling** of a component, and understand how to use **inline styles** with props in React.
 
 ---
+
+# 02. State
+
+### Q1. Basic Counter with State (Increment, Decrement, Reset)
+
+Create a React app with name **"basic-counter-app"**.
+
+1. Inside a `Components` folder, create a component file **`Counter.jsx`**.
+
+2. In the `Counter` component:
+   - Use the `useState` hook to create a state variable:
+     - `count`, with initial value `0`
+   - Display the current count in a paragraph:
+     - `Count: {count}`
+   - Add three buttons:
+     1. **Increment** button  
+        - On click, it should increase `count` by `1` using `setCount(count + 1)`
+     2. **Decrement** button  
+        - On click, it should decrease `count` by `1` using `setCount(count - 1)`
+     3. **Reset** button  
+        - On click, it should reset `count` back to `0` using `setCount(0)`
+
+3. In **`App.jsx`**:
+   - Render a heading:  
+     `Welcome to State`
+   - Render the `Counter` component below the heading.
+
+Goal of this question:  
+Practice creating a **state variable with `useState`**, updating it on button clicks, and seeing how **React re-renders the UI** when the state changes.
