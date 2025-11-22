@@ -98,3 +98,39 @@ Create a React app with name **"product-list-app"**.
     - Pass id, name, and price as props to ProductItem.
 
     - Use the product’s id as the key prop in the map.
+
+---
+
+### Q4. Custom Button with Label and Color Props
+
+Create a React app with name **"custom-button-app"**.
+
+1. Inside a `Components` folder, create a component file **`CustomButton.jsx`**.
+
+2. The `CustomButton` component should:
+   - Receive two props:
+     - `myLabel` → text to show inside the button
+     - `myColor` → background color of the button
+   - Render a `<button>` element.
+   - Apply the background color using **inline styles**:
+     - `style={{ backgroundColor: props.myColor }}`
+   - Use `{props.myLabel}` as the button text.
+
+3. In **`App.jsx`**:
+   - Create three pairs of variables for labels and colors, for example:
+     - `label1 = "Button"`, `color1 = "#ffde59"`
+     - `label2 = "Submit"`, `color2 = "Green"`
+     - `label3 = "Reset"`, `color3 = "Red"`
+   - Render a heading:  
+     `Custom Button Application`
+   - Render the `CustomButton` component **three times**:
+     - First button uses `label1` and `color1`
+     - Second button uses `label2` and `color2`
+     - Third button uses `label3` and `color3`
+   - Pass data using props:  
+     `myLabel={label1}` and `myColor={color1}`, etc.
+
+Goal of this question:  
+Practice **passing props to control both content and styling** of a component, and understand how to use **inline styles** with props in React.
+
+---
