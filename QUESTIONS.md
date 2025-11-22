@@ -163,3 +163,43 @@ Create a React app with name **"basic-counter-app"**.
 
 Goal of this question:  
 Practice creating a **state variable with `useState`**, updating it on button clicks, and seeing how **React re-renders the UI** when the state changes.
+
+---
+
+### Q2. Temperature Controller with Minimum Limit
+
+Create a React app with name **"temperature-controller"**.
+
+1. Inside a `Components` folder, create a component file **`Temperature.jsx`**.
+
+2. In the `Temperature` component:
+   - Use the `useState` hook to create a state variable:
+     - `temp`, with initial value `25`
+   - Display the current temperature in a paragraph:
+     - `Current Temperature: {temp}°C`
+
+3. Add three buttons:
+   1. **Increase** button  
+      - On click, it should increase the temperature by `1` using:  
+        `setTemp(temp + 1)`
+   2. **Decrease** button  
+      - On click, it should **decrease** the temperature by `1`, but with a condition:
+        - Only decrease if `temp > 15`
+        - If `temp` is already `15`, do not decrease further  
+      - Use an `if` condition inside the click handler:
+        ```js
+        if (temp > 15) {
+          setTemp(temp - 1);
+        }
+        ```
+   3. **Reset** button  
+      - On click, it should reset the temperature back to `25` using:  
+        `setTemp(25)`
+
+4. In **`App.jsx`**:
+   - Show a heading:  
+     `Welcome to Temperature Controller Application`
+   - Render the `Temperature` component below the heading.
+
+Goal of this question:  
+Practice using **state with `useState`**, updating it through buttons, and applying a **condition on state updates** so that the value never goes below a certain limit.
